@@ -1,0 +1,486 @@
+/*	====================
+	Font Imports!  
+	Go to Google.com/webfonts and select the fonts you want to include. 
+	For this example we are using Raleway in uppercase for headings and Source Sans Pro for body copy.
+	==================== */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+
+/*	====================
+	0. GLOBALS
+	==================== */
+
+body {
+	color: #333333;
+	font-family: "Source Sans Pro", 'Raleway', sans-serif; 
+	font-family:  "helvetica-neue", "Helvetica Neue", helvetica, verdana, arial, sans-serif;
+	font-size: 1em;
+	padding-top: 48px; /* This makes room for the fixed nav */
+}
+
+p {
+	line-height: 1.2em;
+	padding: 0 0 .8em 0;
+}
+
+a:link {
+	color: #961A5D;
+}
+a:visited {
+	color: #72C039;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* since these styles get undone in the reset - let's fix that */
+strong, b {
+	font-weight: 700;
+}
+em , i{
+	font-style: italic
+}
+small {
+	font-size: 90%;
+}
+/* For super awesome ampersands, wrap them in a span with this class! */
+span.amp {
+	font-family: baskerville; 
+	font-style: italic;
+}
+
+/*Remove for example */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, helvetica, arial, sans-serif; 
+	text-transform: uppercase;
+	font-weight: 300;
+	clear: both; /* Just in case we have floating things above a header, this will ensure they clear the header */
+}
+
+h1 {
+	font-size: 280%;
+}
+h2 {
+	font-size: 250%;
+}
+h3 {
+	font-size: 200%;
+}
+h4 {
+	font-size: 160%;
+}
+h5 {
+	font-size: 130%;
+}
+h6 {
+	font-size: 110%;
+}
+
+.pull-right {
+	float: right;
+	width: auto;
+}
+.pull-left{
+	float: left;
+	width: auto;
+}
+/*	====================
+	1. WRAPPERS
+	==================== */
+.wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/*	====================
+	2. TOP LEVEL NAVIGATION 
+	==================== */
+nav#top-level {
+	overflow: hidden;
+	width: 100%;
+	background: #fafafa;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 2em 0;
+	position: fixed;
+	top: 0;
+	z-index: 9000; /* This is so the nav bar is always on top */
+}
+	#nav-wrap {
+		float:right;
+		position: relative;
+		left: -50%;
+	}
+	#top-level ul {
+		position: relative;
+		left: 50%;
+	}
+		
+	#top-level li {
+		float: left;
+		width: auto;
+		padding: .5em;
+	}
+		#top-level li a {
+			color: #333;
+			display: block;
+			padding: .8em .5em;
+			text-decoration: none;
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			-o-border-radius: 8px;
+			border-radius: 8px;
+			transition-property: all;
+			transition-duration: 1s;
+			transition-timing-function: ease-in;
+			transition-delay: .5s;
+		}
+			#top-level li a:hover {
+				background: #DA3D9A;
+				color: #fafafa;
+
+			}
+/*	====================
+	3. HERO  
+	==================== */
+#hero {
+	background: url(../images/hero-bg2.png) repeat-x bottom center;
+	/*background-size: 100%;  CSS3 Property to have the background image fill the container */
+	color: #fafafa;
+	
+}
+
+/* Page header with logo and page title */
+#hero header {
+	text-align: center;
+	height: 420px;
+	padding: 1em;
+}
+	#hero header img {
+		max-height: 75%;
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 1s;
+		-webkit-transition-delay: .5s;
+		
+	}
+
+		#hero:hover img {
+			-webkit-transform: rotate(720deg) translate(300px,-20px);
+
+		
+		}
+
+	#hero header h1 {
+		margin: .3em 0;
+		-webkit-text-shadow: 0 0 2px rgba(0,0,0,.6);
+		-moz-text-shadow: 0 0 2px rgba(0,0,0,.6);
+		-o-text-shadow: 0 0 2px rgba(0,0,0,.6);
+		text-shadow: 0 0 2px rgba(0,0,0,.6);
+	}
+	#hero header h4 {
+		
+	}
+
+
+/*	====================
+	4. Section Styles 
+	These are the global styles for the different sections.
+	Specific styles for each section follow these.
+	==================== */
+section {
+	padding: 1em;
+	overflow: hidden; /* Fixes issue with floats not clearing */
+	border-bottom: 3px dotted #e5e5e5;
+}
+	section h2 {
+		font-size: 250%;
+		color: #DA3D9A;
+		margin: .7em 0;
+		text-align: center;
+		font-weight: 400;
+
+		-webkit-text-shadow: 0 0 2px rgba(0,0,0,.8);
+		-moz-text-shadow: 0 0 2px rgba(0,0,0,.8);
+		-o-text-shadow: 0 0 2px rgba(0,0,0,.8);
+		text-shadow: 0 0 2px rgba(0,0,0,.8);
+	}
+
+	section h6 {
+		text-transform: none;
+		font-weight: 400;
+		color: #666;
+		text-align: center;
+	}
+
+
+/*	====================
+	5. Custom Section Styles 
+	Styles for each individual sections. Classes, workshops, about, etc. 
+	==================== */
+#classes, #team {
+	background: #fafafa;
+	 
+}
+	
+	.info-boxes li {
+		width: 45%;
+		float: left;
+		margin: 1.2em .5em;
+	}
+		.info-boxes header {
+			border-bottom: 1px solid #e5e5e5;
+			padding: .5em 0;
+			margin-bottom: .5em;
+		}
+		.info-boxes li h4 {
+			color: #DA3D9A;
+			margin: 0 0 .2em 0
+		}
+		.info-boxes li h6 {
+			color: #999;
+			text-align: left;
+		}
+		.info-boxes h4+small {
+			color: #999;
+			text-transform: uppercase;
+		}
+		.info-boxes a.btn {
+			display: inline-block;
+			padding: .5em .8em;
+			border: 1px solid #72204E;
+			color: #fafafa;
+			text-decoration: none;
+			background: #da3d9a;
+			background: -moz-linear-gradient(top, rgba(218,61,154,1) 0%, rgba(229,34,226,0.59) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(218,61,154,1)), color-stop(100%,rgba(229,34,226,0.59))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(218,61,154,1) 0%,rgba(229,34,226,0.59) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(218,61,154,1) 0%,rgba(229,34,226,0.59) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, rgba(218,61,154,1) 0%,rgba(229,34,226,0.59) 100%); /* IE10+ */
+			background: linear-gradient(to bottom, rgba(218,61,154,1) 0%,rgba(229,34,226,0.59) 100%); /* W3C */
+
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			-o-border-radius: 8px;
+			border-radius: 8px;
+
+			-webkit-box-shadow: 0 2-x 3px rgba(0,0,0,.5);
+			-moz-box-shadow: 0 2-x 3px rgba(0,0,0,.5);
+			-o-box-shadow: 0 2-x 3px rgba(0,0,0,.5);
+			box-shadow: 0 2-x 3px rgba(0,0,0,.5);
+
+			-webkit-text-shadow: 0 1px 1px rgba(0,0,0,.6);
+			-moz-text-shadow: 0 1px 1px rgba(0,0,0,.6);
+			-o-text-shadow: 0 1px 1px rgba(0,0,0,.6);
+			text-shadow: 0 1px 1px rgba(0,0,0,.6);
+		}
+			
+	/* New Topics section */
+	h3#new-topics {
+		text-align: center;
+		margin: .4em 0;
+	}
+	.secondary-classes {
+		clear: both;
+	}
+
+		.secondary-classes li {
+			width: 20%; 
+			float: left;
+			padding: .8em;
+			background: url(../images/fancy-bullet-left.png) no-repeat 0 15px;
+			
+			padding-left: 1.2em;
+		}
+		.secondary-classes li:nth-child(even) {
+			background: url(../images/fancy-bullet-right.png) no-repeat 0 15px;
+			
+		}
+
+
+#team .info-boxes img {
+	width: 40%;
+	float: left;
+	margin: 0 1em .5em 0;
+}
+
+#team aside {
+	border-top: 3px solid #e5e5e5;
+	padding: .5em;
+
+}
+	#team aside h5 {
+		color:#DA3D9A;
+		font-weight: 400;
+	}
+	#team .social li {
+		width: auto;
+		margin: .5em;
+	}
+		
+	#team img {
+		border: 3px solid #fff;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-o-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 3s;
+
+	}
+
+	#team li:hover img {
+		-webkit-transform: rotate(-20deg);
+	}
+
+/* Social icons */
+
+.social a {
+	line-height: 20px;
+	padding: .3em .5em;
+	text-decoration: none; 
+	color: #fff;
+}
+	.social a i.icon{
+		display: inline-block;
+		height: 16px;
+		width: 16px;
+		position: relative;
+		top: 3px;
+		margin: 0 5px 0 0;
+	}
+		.social a.facebook i.icon {
+			background: url(../images/icon-fb.png) no-repeat top left; 
+		}
+			.social a.facebook {
+				background: #207cca;
+			}
+		.social a.twitter {
+			background: #87e0fd;
+		}	
+			.social a.twitter i.icon {
+				background: url(../images/icon-twitter.png) no-repeat top left; 
+			}
+		.social a.email {
+			background: #9dd53a;
+		}
+			.social a.email i.icon {
+				background: url(../images/icon-mail.png) no-repeat top left; 
+			}
+
+#aboutgdi {
+	border-bottom: none;
+}
+
+
+
+/*	====================
+	5. Footer
+	==================== */
+footer {
+	background: url(../images/footer-bg.png) repeat-x bottom center;
+	color: #fafafa;
+}
+	footer .wrap {
+		padding: 1em;
+	}
+	footer img.logo {
+		width: 25%;
+		margin: .5em auto;
+		display: block;
+	}
+	#boulder-social {
+		width: 35%;
+	}
+
+	#sponsors {
+		width: 60%;
+	}
+	
+	#sponsors li, #boulder-social li  {
+		float: left;
+		width: auto;
+	}
+	#sponsors li {
+		margin: .5em 1em;
+	}
+	#sponsors li img {
+		background: #fff;
+		width: 100px;
+		padding: .3em;
+		opacity: .5;
+
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-o-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+		#sponsors li:hover img{
+			opacity: 1;
+
+		}
+
+
+	#boulder-social li {
+		margin: .9em .3em;
+	}
+
+
+
+	/* Smartphones (portrait and landscape) */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+/* Styles */
+
+	body {
+		padding-top: 0;
+	}
+	
+ 	nav#top-level{
+ 		position: static;
+ 		margin-bottom: 0;
+ 	}
+
+ 	#hero header img {
+ 		max-height: 50%;
+ 	}
+
+ 	section h2 {
+ 		font-size: 180%;
+ 	}
+
+ 	.info-boxes li {
+ 		width: 100%;
+ 		float: none
+ 	}
+
+ 	.info-boxes li h4 {
+ 		font-size: 150%;
+ 	}
+
+ 	.secondary-classes li {
+ 		width: 100%;
+ 		float: none;
+ 		background: none;
+ 	}
+
+ 	#team .social li {
+ 		width: auto;
+ 		margin: 1em .5em;
+ 	}
+
+}
+
+
+
+
+
+
+
