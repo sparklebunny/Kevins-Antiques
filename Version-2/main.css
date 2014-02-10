@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/css?family=Della+Respira|Belleza);
+
+
+.wrapper {
+
+	background-color: #FCF0D5; 
+}
+
+
+a {
+
+	text-decoration: none;
+}
+
+/*Logo and Navigation Links with Styling */
+
+
+#logo {
+
+	text-align: center;
+	background-color: #800000;
+}
+
+
+#nav-links a {
+
+			color: #503030;
+			font-weight: bold;
+			font-family: "Belleza", serif;
+			display: block;
+			padding: 4px;
+			font-size: 1.25em;
+			margin: 10px;
+			padding: 10px;
+			float: left;
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			-o-border-radius: 8px;
+			border-radius: 8px;
+			transition-property: all;
+			transition-duration: .25s;
+			transition-timing-function: ease-in;
+			transition-delay: .15s;
+}
+
+#nav-links a:hover {
+
+			background: #800000;
+			color: #fafafa;
+	}
+
+	/* Furniture Box styling */
+
+#furbox {
+	
+	position: relative;
+	/*margin-top: 80px;*/
+	line-height: 1;
+	text-align: center;
+
+}
+
+#furbox-1 {
+	margin-top: 80px;
+
+}
+
+#furbox-2 {
+	margin-top: 30px;
+}
+
+#furbox ul {
+
+	display: inline-block;
+}
+
+#furbox li {
+
+	float: left;
+	padding: 6px;
+	margin: 10px;
+	border: 2px #800000;
+	border-style: solid;
+	border-radius: 10px;
+	max-width: 300px;
+	max-width: 300px;
+	display: inline;
+	text-align: center;
+}
+
+#furbox a {
+
+		color: #503030;
+		font-weight: bold;
+		font-family: "Belleza", serif;
+		display: block;
+		font-size: 1.25em;
+}
+
+
+.nav-pic {
+
+	max-width: 280px;
+	height: 280px;
+	border-radius: 8px;
+	vertical-align: middle;
+	display: block;
+	margin: auto;
+
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+     transition: all 1s ease;
+}
+
+.nav-pic:hover {
+
+	-webkit-filter: grayscale(100%);
+}
+
+
+/* Text and Paragraph Styling */
+
+
+
+h1 {
+
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Della Respira", sans-serif;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+h2 {
+	
+	margin-top: 20px;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: "Della Respira", sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+	font-style: italic;
+
+}
+
+p {
+
+	font-size: 1em;
+	font-family: "Belleza", serif;
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+#coming-soon {
+
+	text-decoration: none;
+	font-weight: bold;
+	color: #800000;
+	font-size: 1.2em;
+}
+
+#text a:hover {
+
+	text-decoration: underline;
+	color: #800000;
+
+}
+
+
+/* Footer Styling */
+
+footer {
+
+	font-size: .75em;
+	font-style: italic;
+	text-align: center;
+	padding: 10px;
+
+}

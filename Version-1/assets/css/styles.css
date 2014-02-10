@@ -1,0 +1,159 @@
+
+li {
+	list-style-type: none;
+}
+ 
+body {
+	background-color: #FCF0D5;
+}
+
+nav#top-level {
+	overflow: hidden; 
+	width: auto;
+	top: 0;
+	z-index: 1; 
+	margin: 0 0 2em 0;
+	height: 275px;
+
+}
+
+#top-level ul  {
+	display: inline-block;
+}
+
+#logo {
+	background-color: #800000;
+}
+
+#nav-wrap {
+	float: center;
+	position: relative;
+	 
+}
+
+
+#top-level li {
+	float: left;
+	width: auto;
+	padding: .5em;
+
+}
+
+#nav-wrap li a {
+			color: #503030;
+			display: block;
+			padding: .8em .5em;
+			font-size: 1.25em;
+			font-family: "Della Respira", sans-serif;
+			font-weight: 100, bold;
+			text-decoration: none;
+			/*clear: both; */
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			-o-border-radius: 8px;
+			border-radius: 8px;
+			transition-property: all;
+			transition-duration: .25s;
+			transition-timing-function: ease-in;
+			transition-delay: .25s;
+			
+		}
+
+#top-level li a:hover {
+			background: #800000;
+			color: #fafafa;
+	}
+
+#container {
+	margin-top: 200px;
+	z-index: -1;
+}
+
+#furbox ul {
+	/*position: relative;
+	left: 25%; */
+	display: inline-block;
+
+}
+
+#furbox li {
+	float: left;
+	margin: 5px;
+	background: #fff;
+	padding: 4px;
+	border:  1px solid green;
+	position: relative;
+	left: -5px;
+	top: -5px;
+	max-height: 300px;
+	max-width: 300px;
+}
+
+#furbox {
+	/*float: left;*/
+	margin: 20px 20px 20px 20px;
+	line-height: 1;
+	text-align: center;
+	
+}
+
+.nav-pic {
+	width: 290px;
+	height: 290px;
+	padding: 3px 3px 3px 3px;
+
+}
+
+a {
+	color: #503030;
+	text-decoration: none;
+
+}
+
+a:hover {
+			background: #800000;
+			color: #fafafa;
+	}
+
+#text-body {
+	clear: both;
+	padding-left: 15px;
+}
+
+h1 {
+	line-height: 1.5em;
+	text-align: center;
+	font-style: bold;
+	font-family: "Belleza", sans-serif;
+	font-weight: 400, bold;
+	font-size: 300%;
+	padding-left: 15px;
+
+}
+
+h2 {
+	line-height: 1.2em;
+	text-align: center;
+	font-style: italic;
+	font-size: 150%;
+	font-family: "Belleza", sans-serif;
+	font-weight: 200, bold;
+	padding-left: 15px;
+}
+
+
+p {
+	line-height: 1.2em;
+	padding: .5em 1em .5em 1em;
+	text-align: left;
+	font-family: "Della Respira", serif;
+}
+
+footer {
+	line-height: 1.2em;
+	padding: .5em 1em .5em 1em;
+	text-align: center;
+	font-size: 75%;
+}
+
+
