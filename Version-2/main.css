@@ -49,6 +49,18 @@ a {
 			color: #fafafa;
 	}
 
+#tagline {
+	margin-top: 75px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#intro_text {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
 	/* Furniture Box styling */
 
 #furbox {
@@ -169,6 +181,15 @@ p {
 	text-decoration: underline;
 	color: #800000;
 
+}
+
+
+/* CONTACT FORM PAGE WITH STYLING */
+
+#contact_form {
+	margin-top: 80px;
+	position: absolute;
+	margin-left: 30px;
 }
 
 
