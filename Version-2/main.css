@@ -188,12 +188,62 @@ p {
 
 #contact_form {
 	margin-top: 80px;
-	position: absolute;
+	position: fixed;
 	margin-left: 30px;
 }
 
 
-/* Footer Styling */
+label {
+	font-size: 100%;
+    width: 100px;
+    font-weight: bold;
+    margin: 2px 0;
+	display: inline-block;
+}
+
+#contact-btn {
+
+	text-align: center;
+}
+
+.send-reset {
+	float: left;
+}
+
+.form-btn {
+
+			color: #503030;
+			font-weight: bold;
+			font-family: "Belleza", serif;
+			display: inline;
+			font-size: 1em;
+			margin: 2px;
+			padding: 6px;
+			float: left;
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			-o-border-radius: 8px;
+			border-radius: 8px;
+			transition-property: all;
+			transition-duration: .25s;
+			transition-timing-function: ease-in;
+			transition-delay: .15s;
+}
+
+
+
+.form-btn:hover {
+
+		background: #800000;
+		color: #fafafa;
+}
+
+
+
+
+
+
+/* FOOTER STYLING 
 
 footer {
 
