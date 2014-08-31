@@ -49,19 +49,99 @@ a {
 			color: #fafafa;
 	}
 
+/* TEXT STYLING: HEADLINE, SUBHEAD, PARAGRAPH, EMBEDDED LINKS */
+
+
+h1 {
+
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Della Respira", sans-serif;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+h2 {
+	
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: "Della Respira", sans-serif;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: "Della Respira", sans-serif;
+	text-align: center;
+	padding-bottom: 3px;
+	font-style: italic;
+}
+
+p {
+
+	font-size: 1em;
+	font-family: "Belleza", serif;
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+#coming-soon {
+
+	text-decoration: none;
+	font-weight: bold;
+	color: #800000;
+	font-size: 1.2em;
+}
+
+.text a {
+	color: #503030;
+	font-weight: bold;		
+	font-family: "Belleza", serif;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;			
+	border-radius: 8px;
+	transition-property: all;
+	transition-duration: .25s;
+	transition-timing-function: ease-in;
+	transition-delay: .15s;
+
+}
+
+.text a:hover {
+
+	background-color: #800000;
+	color: #fafafa;
+}
+
+
 #tagline {
 	margin-top: 75px;
 	margin-left: 50px;
 	margin-right: 50px;
 }
 
-#intro_text {
+#subhead {
 	margin-left: 50px;
 	margin-right: 50px;
 }
 
+#intro_text {
+	margin-left: 150px;
+	margin-right: 150px;
+}
 
-	/* Furniture Box styling */
+
+
+
+
+
+/* FURNITURE BOX STYLING */
 
 #furbox {
 	
@@ -132,56 +212,8 @@ a {
 }
 
 
-/* Text and Paragraph Styling */
 
 
-
-h1 {
-
-	font-size: 2.5em;
-	font-weight: bold;
-	text-align: center;
-	font-family: "Della Respira", sans-serif;
-	padding-top: 20px;
-	padding-bottom: 10px;
-}
-
-h2 {
-	
-	margin-top: 20px;
-	font-size: 1.5em;
-	font-weight: bold;
-	font-family: "Della Respira", sans-serif;
-	text-align: center;
-	padding-bottom: 10px;
-	font-style: italic;
-
-}
-
-p {
-
-	font-size: 1em;
-	font-family: "Belleza", serif;
-	padding: 10px;
-	margin-left: 20px;
-	margin-right: 20px;
-
-}
-
-#coming-soon {
-
-	text-decoration: none;
-	font-weight: bold;
-	color: #800000;
-	font-size: 1.2em;
-}
-
-#text a:hover {
-
-	text-decoration: underline;
-	color: #800000;
-
-}
 
 
 /* CONTACT FORM PAGE WITH STYLING */
@@ -247,11 +279,16 @@ label {
 }
 
 
+/* ABOUT PAGE STYLING */
+
+#about-me {
+	margin: 80px 40px 30px;
+}
 
 
 
 
-/* FOOTER STYLING 
+/* FOOTER STYLING */
 
 footer {
 
@@ -259,5 +296,10 @@ footer {
 	font-style: italic;
 	text-align: center;
 	padding: 10px;
-
+	position: relative;
+	bottom: 10px;
 }
+
+
+
+
