@@ -29,33 +29,36 @@
 			<form action="MAILTO:jeribeth@gmail.com" method="post" enctype="text/plain">
 				
 					<label for="first_name" class="form_info">First Name:</label> 
-					<input type="text" id="first_name" required/><br>
+					<input type="text" id="first_name" class="input-box" required maxlength="100" /><br>
 
 					<label for="last_name" class="form_info">Last Name: </label>
-					<input type="text" id="last_name" required/><br>
+					<input type="text" id="last_name" class="input-box" required maxlength="100"/><br>
 
 					<label for="address1" class="form_info">Address 1: </label> 
-					<input type="text" name="address1" /><br>
+					<input type="text" name="address1"  class="input-box" maxlength="100"/><br>
 
 					<label for="address2" class="form_info">Address 2: </label>
-					<input type="text" name="address2" /><br>
+					<input type="text" name="address2" class="input-box" maxlength="100"/><br>
 
 					<label for="city" class="form_info">City: </label>
-					<input type="text" name="city" /><br>
+					<input type="text" name="city" class="input-box" maxlength="100"/><br>
 				
 					<label for="state" class="form_info">State: </label>
-					<input type="text" name="state" /><br>
+					<input type="text" name="state" class="input-box" maxlength="100"/><br>
 				
 					<label for="zip" class="form_info">Zip:</label> 
-					<input type="text" name="zip" /><br>
+					<input type="text" name="zip" class="input-box" maxlength="10"/><br>
 				
 					<label for="email" class="form_info">Email:</label> 
-					<input type="text" name="email" required/><br>
+					<input type="text" name="email" class="input-box" required maxlength="100"/><br>
 				
 					<label for="phone" class="form_info">Phone:</label> 
 					<input type="text" name="phone" 
 					placeholder="(000) 000-0000" 
-					pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}" required/><br>
+					pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}" class="input-box" required maxlength="15"/><br>
+
+					<label for="comments">Comments: </label>
+					<input type="text" name="comments" class="input-box" style="height: 50px;" maxlength="200" /><br>
 				
 			
 					<div id="contact-btn">
@@ -74,7 +77,11 @@
 
 
 
-
+	<script type="text/javascript">stLight.options({publisher: "b25ce7fa-3610-4a0c-a09b-9ccce61cd940", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+	<script>
+	var options={ "publisher": "b25ce7fa-3610-4a0c-a09b-9ccce61cd940", "position": "right", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["google_bmarks", "googleplus", "facebook", "pinterest", "twitter", "linkedin", "email", "sharethis"]}};
+	var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+	</script>
 
 
 

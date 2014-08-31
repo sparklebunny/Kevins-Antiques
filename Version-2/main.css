@@ -201,13 +201,21 @@ label {
 	display: inline-block;
 }
 
-#contact-btn {
+.input-box {
+
+	width: 300px;
+}
+
+/*#contact-btn {
 
 	text-align: center;
-}
+}*/
 
 .send-reset {
 	float: left;
+	width: 2px;
+	margin-top: 10px;
+	margin-left: 100px;
 }
 
 .form-btn {
