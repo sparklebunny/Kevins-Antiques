@@ -279,12 +279,32 @@ label {
 }
 
 
-/* ABOUT PAGE STYLING */
+/* ABOUT PAGE STYLING WITH MAP AND DIRECTIONS */
 
 #about-me {
-	margin: 80px 40px 30px;
+
+	margin: 80px 200px 0px 200px;
+
 }
 
+#locate-head {
+
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.locate-head {
+
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#map {
+
+	text-align: center;
+	clear: both;
+	margin-bottom: 50px;
+}
 
 
 
