@@ -219,9 +219,8 @@ p {
 /* CONTACT FORM PAGE WITH STYLING */
 
 #contact_form {
-	margin-top: 80px;
-	position: fixed;
-	margin-left: 30px;
+	margin: 80px 0 0 30px;
+	clear: both;
 }
 
 
@@ -238,10 +237,9 @@ label {
 	width: 300px;
 }
 
-/*#contact-btn {
-
-	text-align: center;
-}*/
+#contact-btn {
+	margin-bottom: 150px;
+}
 
 .send-reset {
 	float: left;
@@ -277,6 +275,8 @@ label {
 		background: #800000;
 		color: #fafafa;
 }
+
+
 
 
 /* ABOUT PAGE STYLING WITH MAP AND DIRECTIONS */
@@ -318,6 +318,7 @@ footer {
 	padding: 10px;
 	position: relative;
 	bottom: 10px;
+	margin: 30px auto;
 }
 
 
